@@ -36,14 +36,14 @@ include "navbar.php";
 			<div class="col-sm-4">
 				<div class="card">
 					<div class="card-body">
-						Data Pengguna
+						Stok Barang
 						<?php
 						include '../koneksi.php';
 						$data_petugas = mysqli_query($koneksi,"SELECT * FROM petugas");
 						$jumlah_petugas = mysqli_num_rows($data_petugas);
 						?>
 						<h3><?php echo $jumlah_petugas; ?></h3>
-						<a href="data_pengguna.php" class="btn btn-outline-primary btn-sm">Detail</a>
+						<a href="stok_barang.php" class="btn btn-outline-primary btn-sm">Detail</a>
 					</div>
 				</div>
 			</div>
@@ -51,8 +51,8 @@ include "navbar.php";
 	</div>
 </div>
 <div class="card mt-2">
-	<div class="card-body">
-		<p>Selamat Datang Dihalaman Administrator, Silahkan Anda Bisa Mengakses Beberapa Fitur</p>
+	<div class="card-body" "text-center">
+		<p>Selamat Datang Dihalaman Petugas, Silahkan Anda Bisa Mengakses Beberapa Fitur</p>
 	</div>
 </div>
 <?php
